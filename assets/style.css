@@ -220,3 +220,9 @@ footer .end { margin-left: auto; }
 
 .guide { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 32px; }
 .guide .btn-dark { display: inline-flex; align-items: center; gap: 10px; font-size: 16px; padding: 14px 22px; }
+
+/* Nouveautés 0.7 : cartes claires, pictogramme bleu. */
+.new .badge { background: rgba(0, 122, 255, 0.1); color: var(--accent); }
+.new .types { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.new .type { gap: 14px; }
+.new .type h3 { font-size: 19px; }

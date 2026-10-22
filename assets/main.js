@@ -24,6 +24,7 @@
     wave: 'M3 11v2M6.5 8.5v7M10 5v14M13.5 8v8M17 4v16M20.5 10v4',
     zip: 'M6 3h9l4 4v14H6zM11 5h1M11 7.5h1M11 10h1M11 12.5h1M10.5 15h2v3h-2z',
     terminal: 'M3 5h18v14H3zM7 9.5l3 2.5-3 2.5M12.5 15h4.5',
+    seal: 'M6 3h9l4 4v14H6zM8.5 16.5l7.5-6M9.5 19.5l6.5-5',
     link: 'M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1'
   };
   function icon(name) {
@@ -33,18 +34,18 @@
   // Roues par défaut de l'app (QuickAction.defaultIDs), dans le même ordre : l'élément 0 est en haut.
   var L = fr ? {
     image: ['Prêt à partager', 'Convertir', 'Redimensionner', 'Compresser', 'Retirer les métadonnées', 'Copier le texte', 'Détourer', 'AirDrop'],
-    pdf: ['Compresser', 'Prêt à envoyer', 'Fusionner', 'Séparer les pages', 'PDF → images', 'Copier le texte', 'AirDrop'],
+    pdf: ['Compresser', 'Prêt à envoyer', 'Fusionner', 'Séparer les pages', 'PDF → images', 'Copier le texte', 'AirDrop', 'Filigraner'],
     video: ['Compresser', "Extraire l'audio", 'AirDrop', 'Archiver (.zip)'],
     folder: ['Archiver (.zip)', 'Terminal ici', 'Copier le chemin', 'AirDrop']
   } : {
     image: ['Ready to share', 'Convert', 'Resize', 'Compress', 'Remove metadata', 'Copy text', 'Remove background', 'AirDrop'],
-    pdf: ['Compress', 'Ready to send', 'Merge', 'Split pages', 'PDF → images', 'Copy text', 'AirDrop'],
+    pdf: ['Compress', 'Ready to send', 'Merge', 'Split pages', 'PDF → images', 'Copy text', 'AirDrop', 'Watermark'],
     video: ['Compress', 'Extract audio', 'AirDrop', 'Compress (.zip)'],
     folder: ['Compress (.zip)', 'Terminal here', 'Copy path', 'AirDrop']
   };
   var SETS = {
     image: ['wand', 'convert', 'resize', 'compress', 'gps', 'ocr', 'wand', 'airdrop'],
-    pdf: ['compress', 'send', 'merge', 'split', 'images', 'ocr', 'airdrop'],
+    pdf: ['compress', 'send', 'merge', 'split', 'images', 'ocr', 'airdrop', 'seal'],
     video: ['film', 'wave', 'airdrop', 'zip'],
     folder: ['zip', 'terminal', 'link', 'airdrop']
   };
