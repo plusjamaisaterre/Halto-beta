@@ -62,6 +62,8 @@ p { margin: 0; }
 .btn-main:hover { background: #0071EB; transform: translateY(-2px); box-shadow: 0 14px 32px rgba(0,122,255,0.34); }
 .btn-main:active { transform: translateY(0) scale(0.98); }
 .meta { font-size: 13px; color: var(--muted); }
+.sha { margin-top: -18px; font-size: 11px; max-width: 100%; overflow-wrap: anywhere; }
+.sha code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); }
 
 /* Démo animée */
 .demo { padding-bottom: 128px; }
