@@ -1,155 +1,189 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en" class="nojs">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Halto – Maintiens ⌥. C'est fait.</title>
-<meta name="description" content="Halto transforme tes fichiers directement dans le Finder, d'un seul geste. Tout reste sur ton Mac. Bêta gratuite pour macOS 14 et plus.">
+<title>Halto – Hold ⌥. Done.</title>
+<meta name="description" content="Halto transforms your files right in the Finder with a single gesture. Everything stays on your Mac. Free beta for macOS 14 and later.">
 <meta name="robots" content="noindex">
-<link rel="alternate" hreflang="en" href="en/">
+<link rel="alternate" hreflang="fr" href="fr/">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/style.css">
-<meta property="og:title" content="Halto – Maintiens ⌥. C'est fait.">
-<meta property="og:description" content="Convertis, compresse, redimensionne tes fichiers dans le Finder, d'un seul geste.">
+<meta property="og:title" content="Halto – Hold ⌥. Done.">
+<meta property="og:description" content="Convert, compress and resize your files in the Finder with a single gesture.">
 <meta property="og:image" content="assets/halto-icone.png">
 </head>
-<body>
+<body data-assets="assets/">
 
 <header class="nav">
-<nav class="wrap" aria-label="Navigation principale">
-<a class="brand" href="#top"><img src="assets/halto-logo.png" alt=""><b>Halto</b><span class="pill">Bêta</span></a>
+<nav class="wrap" aria-label="Main navigation">
+<a class="brand" href="#top"><img src="assets/halto-logo.png" alt=""><b>Halto</b><span class="pill">Beta</span></a>
 <div class="links">
-<a href="#fonctions">Fonctionnalités</a>
-<a href="#installer">Installer</a>
+<a href="#wheels">Features</a>
+<a href="#install">Install</a>
 <a href="#faq">FAQ</a>
-<a class="lang" href="en/" hreflang="en" lang="en">English</a>
-<a class="btn-dark" href="#telecharger">Télécharger</a>
+<a class="lang" href="fr/" hreflang="fr" lang="fr">Français</a>
+<a class="btn-dark" href="#download">Download</a>
 </div>
 </nav>
 </header>
 
 <main>
 <section id="top" class="wrap hero">
-<img class="icon" src="assets/halto-icone.png" alt="Icône de Halto" width="136" height="136">
-<h1>Maintiens ⌥.<br>C'est fait.</h1>
-<p class="lead">Convertis, compresse, redimensionne et partage tes fichiers directement dans le Finder, d'un seul geste. Tout reste sur ton Mac.</p>
-<div id="telecharger" class="cta">
+<img class="icon reveal" src="assets/halto-icone.png" alt="Halto icon" width="128" height="128">
+<h1 class="reveal" style="--d: .08s">Hold ⌥.<br>Done.</h1>
+<p class="lead reveal" style="--d: .16s">Convert, compress and share your files right in the Finder. One gesture, nothing leaves your Mac.</p>
+<div id="download" class="cta reveal" style="--d: .24s">
 <a class="btn-main" href="https://github.com/plusjamaisaterre/Halto-beta/releases/latest/download/Halto.dmg">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="M6 11l6 6 6-6"/><path d="M5 20h14"/></svg>
-Télécharger la bêta
+Download the beta
 </a>
-<a href="#installer">Comment l'installer ›</a>
+<a href="#install">How to install ›</a>
 </div>
-<p class="meta">Version 0.6.1 · macOS 14 ou plus récent · Gratuite pendant la bêta</p>
+<p class="meta reveal" style="--d: .3s">Version 0.6.1 · macOS 14 or later · Free during the beta</p>
 </section>
 
-<section class="wrap demo" aria-label="Démonstration">
-<div class="finder" role="img" aria-label="La roue de Halto ouverte sur une photo dans le Finder">
-<div class="titlebar"><span class="dot" style="background:#FF5F57"></span><span class="dot" style="background:#FEBC2E"></span><span class="dot" style="background:#28C840"></span><span>Téléchargements</span></div>
-<div class="finder-body">
-<div class="sidebar"><small>Favoris</small><span>Bureau</span><span>Documents</span><span class="on">Téléchargements</span><span>Images</span></div>
-<div class="files">
-<div class="file"><i class="doc"></i>Facture.pdf</div>
-<div class="file"><i class="photo"></i><span class="selected">Vacances.heic</span></div>
-<div class="file"><i class="doc"></i>Contrat.docx</div>
-<div class="file"><i class="movie"></i>Démo.mov</div>
-<div class="file"><i class="folder"></i>Projets</div>
+<section class="wrap demo reveal" aria-label="Demo">
+<div class="stage-wrap" role="img" aria-label="Animation: in the Finder, the cursor holds Option on a photo, a PDF and a video, and the Halto wheel converts, compresses and extracts the audio.">
+<div class="stage" aria-hidden="true">
+<div class="wall"></div>
+<div class="finder">
+<div class="fbar"><span class="dot" style="background:#FF5F57"></span><span class="dot" style="background:#FEBC2E"></span><span class="dot" style="background:#28C840"></span><span class="navb">‹ ›</span><span class="ttl">Downloads</span></div>
+<div class="fbody">
+<div class="fside"><small>Favorites</small><span>AirDrop</span><span>Desktop</span><span>Documents</span><span class="on">Downloads</span><span>Pictures</span></div>
+<div class="flist">
+<div class="fhead"><span>Name</span><span>Date Modified</span><span>Size</span></div>
+<div class="rows"></div>
+</div>
+</div>
+</div>
 <div class="wheel">
-<span class="center">Vacances.heic</span>
-<span style="left:200px;top:60px">Prêt à partager</span>
-<span class="hot" style="left:299px;top:101px">Convertir</span>
-<span style="left:340px;top:200px">Redimensionner</span>
-<span style="left:299px;top:299px">Compresser</span>
-<span style="left:200px;top:340px">Retirer le GPS</span>
-<span style="left:101px;top:299px">Copier le texte</span>
-<span style="left:60px;top:200px">Détourer</span>
-<span style="left:101px;top:101px">AirDrop</span>
+<svg class="seg" width="260" height="260" viewBox="0 0 260 260"><defs><linearGradient id="segGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3D9BFF"/><stop offset="1" stop-color="#0066E0"/></linearGradient><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#007AFF" flood-opacity="0.55"/></filter></defs><path d="" fill="url(#segGrad)" fill-opacity="0.9" stroke="rgba(255,255,255,0.35)" stroke-width="1" filter="url(#glow)"/></svg>
+<div class="hub"><img src="assets/halto-logo-sombre.png" alt=""><b></b></div>
 </div>
-</div>
-</div>
-</div>
-<p class="caption">Sélectionne un fichier, maintiens ⌥, glisse vers une action, relâche.</p>
-</section>
-
-<section id="fonctions" class="wrap section">
-<div class="intro">
-<h2 class="h2">Le bon outil, là où est ton fichier.</h2>
-<p class="lead">La roue s'adapte au fichier sous ton pointeur. Chaque action garde toujours sa place : le geste devient un réflexe.</p>
-</div>
-<div class="grid">
-<div class="card"><small>Images</small><b>Prêtes à partager</b><p>Convertir en JPG, PNG ou HEIC, redimensionner, compresser, retirer la position GPS, détourer le sujet.</p></div>
-<div class="card"><small>PDF</small><b>Légers et bien rangés</b><p>Compresser, fusionner, séparer les pages, transformer en images ou copier le texte.</p></div>
-<div class="card"><small>Vidéos</small><b>Plus petites, sans effort</b><p>Compresser en 1080p, 720p ou 540p, extraire l'audio.</p></div>
-<div class="card"><small>Documents</small><b>Word, RTF, ODT</b><p>Exporter en PDF ou copier le texte en un geste.</p></div>
-<div class="card"><small>Dossiers</small><b>Archiver et naviguer</b><p>Créer une archive, ouvrir un Terminal ici, copier le chemin.</p></div>
-<div class="card"><small>Sans fichier</small><b>Sur le Bureau aussi</b><p>Capturer une zone, en copier le texte, coller le presse-papiers en fichier.</p></div>
-</div>
-</section>
-
-<section class="trust" aria-label="Confidentialité">
-<div class="wrap grid">
-<div>
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7FB2FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
-<b>100 % sur ton Mac</b>
-<p>Tous les traitements se font en local, avec les outils de macOS. Rien n'est envoyé sur Internet.</p>
-</div>
-<div>
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7FB2FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 13l2 2 4-4"/></svg>
-<b>Tes originaux, intacts</b>
-<p>Halto crée toujours un nouveau fichier à côté. Il ne modifie ni n'écrase jamais l'original.</p>
-</div>
-<div>
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7FB2FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/></svg>
-<b>Aucune télémétrie</b>
-<p>Pas de compte, pas de traceur, pas de dépendance tierce. Juste une app native.</p>
+<div class="hud"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#34C759"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span></span></div>
+<div class="cursor"><svg width="22" height="30" viewBox="0 0 22 30"><path d="M2 2v22l5.5-5.2 3.6 8.4 3.6-1.6-3.6-8.2H18z" fill="#000000" stroke="#FFFFFF" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+<div class="key"><span class="cap"><b>⌥</b>option</span><span class="hold">Hold</span></div>
 </div>
 </div>
 </section>
 
-<section id="installer" class="wrap section">
-<div class="intro">
-<h2 class="h2">Installer en 2 minutes.</h2>
-<p class="lead">La bêta n'est pas encore signée par Apple. macOS va te demander une confirmation la première fois : c'est normal.</p>
+<section id="wheels" class="wrap section" style="padding-top: 0">
+<div class="intro reveal">
+<h2 class="h2">One wheel for every file.</h2>
+<p class="lead">The wheel adapts to what's under your pointer. Each action keeps its place, so the gesture becomes a reflex.</p>
+</div>
+<div class="types">
+<div class="type reveal"><div class="mini" data-set="image"></div><h3>Images</h3><p>Convert, resize, compress, strip location.</p></div>
+<div class="type reveal" style="--d: .08s"><div class="mini" data-set="pdf"></div><h3>PDF</h3><p>Compress, merge, split, turn into images.</p></div>
+<div class="type reveal" style="--d: .16s"><div class="mini" data-set="video"></div><h3>Videos</h3><p>Shrink to 1080p or 720p, extract the audio.</p></div>
+<div class="type reveal" style="--d: .24s"><div class="mini" data-set="folder"></div><h3>Folders</h3><p>Zip, open a Terminal, copy the path.</p></div>
+</div>
+</section>
+
+<section class="trust" aria-label="Privacy">
+<div class="wrap grid3">
+<div class="reveal">
+<span class="badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+<b>100% on your Mac</b>
+<p>Processed locally with macOS's own tools.</p>
+</div>
+<div class="reveal" style="--d: .08s">
+<span class="badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 13l2 2 4-4"/></svg></span>
+<b>Originals untouched</b>
+<p>Always a new file. Never an overwrite.</p>
+</div>
+<div class="reveal" style="--d: .16s">
+<span class="badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/></svg></span>
+<b>No telemetry</b>
+<p>No account, no tracker, nothing sent.</p>
+</div>
+</div>
+</section>
+
+<section id="install" class="wrap section">
+<div class="intro reveal">
+<h2 class="h2">Install in 2 minutes.</h2>
+<p class="lead">The beta isn't signed by Apple yet, so macOS asks you to confirm once.</p>
 </div>
 <ol class="steps">
-<li><b>Télécharge et glisse</b><p>Ouvre Halto.dmg et glisse Halto dans le dossier Applications.</p></li>
-<li><b>Autorise l'ouverture</b><p>Au premier lancement, confirme dans Réglages Système › Confidentialité et sécurité.</p></li>
-<li><b>Active l'accessibilité</b><p>Halto en a besoin pour savoir quel fichier est sous ton pointeur.</p></li>
-<li><b>Maintiens ⌥</b><p>Survole un fichier dans le Finder, maintiens ⌥ : la roue s'ouvre.</p></li>
+<li class="reveal">
+<div class="art" aria-hidden="true">
+<div class="dmgwin"><span class="tl"><i></i><i></i><i></i></span>
+<span class="app"><img src="assets/halto-icone.png" alt="">Halto</span>
+<svg class="arrow" width="36" height="16" viewBox="0 0 36 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h30M26 2l6 6-6 6" stroke-dasharray="3 4"/></svg>
+<span class="apps"><svg viewBox="0 0 58 50"><path d="M3 9a4 4 0 0 1 4-4h14l5 5h25a4 4 0 0 1 4 4v29a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z" fill="#5AA9F5"/><path d="M3 17h52v26a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z" fill="#7DBEF9"/><path d="M23 38l6-14 6 14M25.5 33h7" stroke="#FFFFFF" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Applications</span>
+</div>
+</div>
+<span class="lbl">Drag to Applications</span>
+<p>Open Halto.dmg and drop the app in.</p>
+</li>
+<li class="reveal" style="--d: .08s">
+<div class="art" aria-hidden="true">
+<div class="panel">
+<span class="ph"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6E6E73" stroke-width="2" stroke-linecap="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/></svg>Privacy &amp; Security</span>
+<span class="bar" style="width: 90%"></span><span class="bar" style="width: 70%"></span>
+<span class="msg"><span>“Halto” was blocked</span><span class="open">Open Anyway</span></span>
+</div>
+</div>
+<span class="lbl">Click “Open Anyway”</span>
+<p>System Settings › Privacy &amp; Security.</p>
+</li>
+<li class="reveal" style="--d: .16s">
+<div class="art" aria-hidden="true">
+<div class="panel">
+<span class="ph"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6E6E73" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="5" r="2"/><path d="M5 9l7 2 7-2M12 11v5l-3 5M12 16l3 5"/></svg>Accessibility</span>
+<span class="rowa dim"><i></i><span>&nbsp;</span><span class="tog"></span></span>
+<span class="rowa"><img src="assets/halto-icone.png" alt=""><span>Halto</span><span class="tog anim"></span></span>
+</div>
+</div>
+<span class="lbl">Turn on Accessibility</span>
+<p>So Halto knows which file you point at.</p>
+</li>
+<li class="reveal" style="--d: .24s">
+<div class="art" aria-hidden="true">
+<span class="cap"><b>⌥</b>option</span>
+<div class="mini" data-set="image"></div>
+</div>
+<span class="lbl">Hold ⌥ on a file</span>
+<p>The wheel opens. Slide, release, done.</p>
+</li>
 </ol>
-<div class="note">
+<div class="note reveal">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0066D6" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>
-<p><strong>« Apple n'a pas pu vérifier Halto » ?</strong> Ouvre Réglages Système › Confidentialité et sécurité, descends jusqu'au message sur Halto et clique sur <strong>Ouvrir quand même</strong>. Tu ne le feras qu'une fois.</p>
+<p>Seeing <strong>“Apple could not verify Halto”</strong>? That's expected for the beta. Use <strong>Open Anyway</strong> as shown above, just once.</p>
 </div>
 </section>
 
-<section class="wrap" style="padding-bottom: 120px">
-<div class="feedback">
-<h2>Un bug, une idée ?</h2>
-<p class="lead">Tu fais partie des premiers à tester Halto. Chaque retour compte, même un tout petit.</p>
-<a class="btn-dark" href="mailto:halto.retours@outlook.com?subject=Retour%20sur%20Halto%20b%C3%AAta">Envoyer un retour</a>
-<p class="meta">Ou depuis l'app : menu Halto › Envoyer un retour</p>
+<section class="wrap" style="padding-bottom: 128px">
+<div class="feedback reveal">
+<h2>A bug, an idea?</h2>
+<p class="lead">You're one of the very first to try Halto. Every bit of feedback counts.</p>
+<a class="btn-dark" href="mailto:halto.retours@outlook.com?subject=Halto%20beta%20feedback">Send feedback</a>
+<p class="meta">Or from the app: Halto menu › Send feedback</p>
 </div>
 </section>
 
-<section id="faq" class="wrap faq" style="padding-bottom: 120px">
-<h2 class="h2">Questions fréquentes</h2>
-<details><summary>Pourquoi macOS affiche-t-il un avertissement ?</summary><p>La bêta n'est pas encore signée par un certificat Apple Developer. L'app ne contient rien de caché, et tout fonctionne en local. La version publique sera signée.</p></details>
-<details><summary>Est-ce que mes fichiers quittent mon Mac ?</summary><p>Non. Halto utilise uniquement les outils intégrés à macOS. Aucun fichier, aucune statistique n'est envoyé.</p></details>
-<details><summary>Halto peut-il abîmer mes fichiers ?</summary><p>Non. Chaque action crée un nouveau fichier à côté de l'original, sans jamais l'écraser.</p></details>
-<details><summary>Comment mettre à jour ?</summary><p>Reviens sur cette page et télécharge la dernière version : elle remplace l'ancienne, tes réglages sont conservés.</p></details>
-<details><summary>Comment désinstaller ?</summary><p>Quitte Halto depuis la barre des menus, puis mets l'app à la corbeille.</p></details>
+<section id="faq" class="wrap faq" style="padding-bottom: 128px">
+<h2 class="h2 reveal">FAQ</h2>
+<div class="reveal">
+<details><summary>Why does macOS show a warning?</summary><div class="ans"><p>The beta isn't signed with an Apple Developer certificate yet. Everything runs locally and the public release will be signed.</p></div></details>
+<details><summary>Do my files leave my Mac?</summary><div class="ans"><p>No. Halto only uses tools built into macOS. No files and no statistics are sent.</p></div></details>
+<details><summary>How do I update?</summary><div class="ans"><p>Download the latest version from this page. It replaces the old one and keeps your settings.</p></div></details>
+<details><summary>How do I uninstall?</summary><div class="ans"><p>Quit Halto from the menu bar, then move the app to the Trash.</p></div></details>
+</div>
 </section>
 </main>
 
 <footer>
 <div class="wrap">
-<span>© 2026 Halto · Bêta privée</span>
+<span>© 2026 Halto · Private beta</span>
 <a href="mailto:halto.retours@outlook.com">Contact</a>
-<a class="end" href="en/" hreflang="en" lang="en">English</a>
+<a class="end" href="fr/" hreflang="fr" lang="fr">Français</a>
 </div>
 </footer>
 
+<script src="assets/main.js"></script>
 </body>
 </html>
