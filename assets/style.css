@@ -217,3 +217,6 @@ footer .end { margin-left: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+.guide { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 32px; }
+.guide .btn-dark { display: inline-flex; align-items: center; gap: 10px; font-size: 16px; padding: 14px 22px; }
